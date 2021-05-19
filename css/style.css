@@ -41,10 +41,29 @@ h1, h2, h3, h4{
     font-family: var(--fuenteEspecial);
     line-height: 1.2rem;
 }
-img{
+.logo a img, .logo a{
     max-width: 100%;
     height: auto;
 }
+.logo{
+    width: 15%;
+}
+.contenedor{
+    background-color: rgba(0,0,0,.4);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.navegacion__nav{
+    width: 100%;
+    text-align: center;
+}
+.navegacion__nav a{
+    margin-right: 10%;
+}
+
 .header{
     background-image: url(../img/perro.jpg);
     max-width: 100%;
