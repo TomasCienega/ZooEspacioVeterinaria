@@ -1,0 +1,173 @@
+:root{
+    /**FUENTES UTILIZADAS**/
+    --fuenteParrafo: 'Barlow Condensed', sans-serif;
+    --fuenteEspecial: 'Luckiest Guy', cursive;
+
+    /**COLORES UTILIZADOS**/
+    --naranja: #FFA424;
+    --azul: #1489FD;
+    --amarillo: #FFD200;
+    --verde: #32AE7E;
+    --rojo: #C20000;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/* GENERALES */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px*/
+}
+h1,h2,h3,h4,h5{
+    font-family: var(--fuenteEspecial);
+}
+*,*:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fuenteParrafo);
+    font-size: 2.5rem;
+    line-height: 1.5;
+    
+}
+/** GLOBALES **/
+a{
+    text-decoration: none;
+}
+/* INICIO DE BARRA DE NAVEGACIÓN */
+/*****************************************************/
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--azul);
+    height: auto;
+    padding: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.nav a{
+    font-family: var(--fuenteEspecial);
+    color: white;
+    width: 15rem;
+    margin-left: 4rem;
+    font-size: 2rem;
+}
+.nav a:hover{
+    color: black;
+}
+/* FIN DE BARRA DE NAVEGACIÓN */
+/*****************************************************/
+/* INICIO DE BOTÓN LOGOUT */
+/*****************************************************/
+.logout{
+    font-family: var(--fuenteEspecial);
+    margin-bottom: 1rem;
+    height: 5rem;
+    padding: 1rem;
+    margin-left: 55%;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: none;
+    border: solid 1px #ccc;
+}
+.logout:hover{
+    background-color: var(--rojo);
+    color: white;
+}
+/* FIN DE BOTÓN LOGOUT */
+/*****************************************************/
+/* INICIO DE BANNER */
+/*****************************************************/
+.banner {
+    border: 1px solid black;
+    border-radius: 1rem;
+    width: 95%;
+    margin: 0 auto;
+    height: auto;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgb(218, 218, 218);
+}
+.banner form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.txt_banner{
+    line-height: 1.8rem;
+}
+.img_banner{
+    font-family: var(--fuenteParrafo);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    margin-left: 10%;
+}
+.btn_banner{
+    background-color: white;
+    font-family: var(--fuenteEspecial);
+    font-size: 5rem;
+    height: 10rem;
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    border: none;
+    border: solid 1px #ccc;
+}
+.btn_banner:hover{
+    background-color: var(--verde);
+    color: white;
+}
+img{
+    width: 40rem;
+}
+/* FIN BANNER */
+/*****************************************************/
+/*****************************************************/
+/* INICIO MEDIA QUERY */
+@media (min-width: 768px) {
+    /* INICIO DE BARRA DE NAVEGACIÓN */
+    /*****************************************************/
+    .nav{
+        height: 10rem;
+        margin-bottom: 2rem;
+    }
+    .nav a{
+        width: 15rem;
+        font-size: 3rem;
+    }
+    .nav a:hover{
+        color: black;
+    }
+    .img_banner{
+        font-size: 4rem;
+    }
+    /* FIN DE BARRA DE NAVEGACIÓN */
+    /*****************************************************/
+    /* INICIO DE BOTÓN LOGOUT */
+    /*****************************************************/
+    .logout{
+        margin-left: 75%;
+    }
+
+    /* FIN DE BOTÓN LOGOUT */
+    /*****************************************************/
+    /* INICIO DE BANNER */
+    /*****************************************************/
+    img{
+        width: 60rem;
+    }   
+}
+@media (min-width: 1280px) {
+    .logout{
+
+        margin-left: 87%;
+    }
+}
