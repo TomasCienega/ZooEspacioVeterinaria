@@ -15,7 +15,7 @@
     <meta name="description" content="Zoo Espacio Salud Animal">
     <meta name="keywords" content="veterinaria, cuidado animal, mascota">
     <link rel="icon" href="../img/LogoClinica.ico">
-    <title>Banner</title>
+    <title>Tarjeta Perdido</title>
     <!-- Hoja de estilos personalizada -->
     <link
     rel="stylesheet"
@@ -33,10 +33,13 @@
     <header>
         <nav class="nav">
             <a href="actualizarBanner.php">Banner</a>
-            <a href="noticias.php">Noticias</a>
-            <a href="verPerdido.php">Mascota</a>
-            <a href="#">Federación</a>
-            <a href="#">Registro</a>
+            <a href="noticias.php">Formulario Perdido</a>
+            <a href="verPerdido.php">Tarjeta Perdido</a>
+            <a href="adopcion.php">Formulario Adopción</a>
+            <a href="verAdopcion.php">Tarjeta Adopción</a>
+            <a href="formFederacion.php">Formulario Federación</a>
+            <a href="verFederacion.php">Tarjeta Federación</a>
+            <a href="registro.php">Registro</a>
         </nav>
         <input class="logout" type="submit" value="Cerrar Sesión" name="CerrarSesion" id="CerrarSesion" onclick="cerrar_sesion();">
     </header>

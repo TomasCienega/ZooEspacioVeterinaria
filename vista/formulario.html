@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <form action="">
+    <form action="../Controlador/inscripcionController.php" method="POST" >
         <div class="form_padre">
             <div>
                 <img src="img/FCM.jpg" alt="">
@@ -35,112 +35,115 @@
                 <div class="form_hijo">
                     <div class="txt_form">
                         <label for="">Raza o Variedad:</label>
-                        <input type="text" name="" id="">
+                        <input type="text" name="raza" required>
                     </div>
                     <div class="txt_form">
                         <label for="">Color y Marcas:</label>
-                        <input type="text" name="" id="">
+                        <input type="text" name="color" required>
                         <label for="">Sexo:</label>
-                        <input type="radio" name="" id="" > <label for="">Macho</label>
-                        <input type="radio" name="" id="" > <label for="">Hembra</label>
+                        <input type="radio" name="sexo" value="Macho" required> <label for="">Macho</label>
+                        <input type="radio" name="sexo" value="Hembra" required> <label for="">Hembra</label>
                     </div>
                     <div class="txt_form">
                         <label>Nombre del Ejemplar:</label>
-                        <input type="text" name="" id="">
+                        <input type="text" name="nombreEjemplar" required>
                     </div>
                     <div class="txt_form">
                         <label>Fecha de Nacimiento:</label>
-                        <input type="text" name="" id="">
+                        <input type="text" name="fechaNac"required>
                     </div>
                     <div class="txt_form">
                         <label>Lugar de Nacimiento:</label>
-                        <input type="text" name="" id="">
+                        <input type="text" name="lugarNac"required>
                     </div>
                     <div class="txt_form">
                         <label>No. de Registro FCM:</label>
-                        <input type="text" name="" id="">
-                        <input type="checkbox" name="" id=""><label for=""> registro en trámite</label>
+                        <input type="text" name="nRegFcm"> 
+                        <input type="checkbox" name="regTramite" value="registro en trámite"><label for="">registro en trámite</label>
                     </div>
                     <div class="txt_form">
                         <label>No. de Microchip:</label>
-                        <input type="text" name="" id="">
-                        <input type="checkbox" name="" id=""><label for=""> microchip en trámite</label> 
+                        <input type="text" name="nMicrochip">
+                        <input type="checkbox" name="mTramite" value="microchip en trámite"><label for=""> microchip en trámite</label> 
                     </div>
                     <div class="txt_form">
                         <label>Nombre del Padre:</label>
-                        <input type="text" name="" id="">
+                        <input type="text" name="nPadre">
                     </div>
                     <div class="txt_form">
                         <label>Nombre de la Madre:</label>
-                        <input type="text" name="" id="">
+                        <input type="text" name="nMadre">
                     </div>
                     <div class="txt_form">
-                        <label>Nombre Manejador:</label>
-                        <input type="text" name="" id="">
+                        <label class="nManejador">Nombre Manejador:</label>
+                        <input type="text" name="nManejador" required>
                     </div>
                     <div class="txt_form">
                         <label>No. de Socio:</label>
-                        <input type="text" name="" id="">
+                        <input type="text" name="nSocio1"required>
                     </div>
                     <div class="txt_form">
                         <label>Nombre Propietario:</label>
-                        <input type="text" name="" id="">
+                        <input type="text" name="nPropietario"required>
                     </div>
                     <div class="txt_form">
                         <label>No. de Socio:</label>
-                        <input type="text" name="" id="">
+                        <input type="text" name="nSocio2"required>
                     </div>
                     <div class="txt_form">
                         <label>Domicilio:</label>
-                        <input type="text" name="" id="">
+                        <input type="text" name="domicilio"required>
                     </div>
                     <div class="txt_form">
                     <label>Colonia:</label>
-                    <input type="text" name="" id="">
+                    <input type="text" name="colonia"required>
                     </div>
                     <div class="txt_form">
                         <label>Código Postal:</label>
-                        <input type="text" name="" id="">
+                        <input type="text" name="cp"required>
                     </div>
                     <div class="txt_form">
                         <label>Ciudad:</label>
-                        <input type="text" name="" id="">
+                        <input type="text" name="ciudad"required>
                     </div>
                     <div class="txt_form">
                         <label>Estado:</label>
-                        <input type="text" name="" id="">
+                        <input type="text" name="estado"required>
                     </div>
                     <div class="txt_form">
                         <label>E-mail confirmación:</label>
-                        <input type="text" name="" id="">
+                        <input type="email" name="email"required>
                     </div>
                     <div class="txt_form">
                         <label>Teléfono:</label>
-                        <input type="text" name="" id="">
+                        <input type="text" name="telefono"required >
                     </div>
                     <div class="txt_form">
                         <p><b> Fechas: </b></p>
-                        <input type="checkbox" name="" id="" class="dias"> <label for="">Jueves</label>
-                        <input type="checkbox" name="" id="" class="dias"> <label for="">Viernes</label>
-                        <input type="checkbox" name="" id="" class="dias"> <label for="">Sábado</label>
-                        <input type="checkbox" name="" id="" class="dias"> <label for="">Domingo</label>
+                        <input type="checkbox" name="jueves" value="Jueves" class="dias"> <label for="">Jueves</label>
+                        <input type="checkbox" name="viernes" value="Viernes" class="dias"> <label for="">Viernes</label>
+                        <input type="checkbox" name="sabado" value="Sabado" class="dias"> <label for="">Sábado</label>
+                        <input type="checkbox" name="domingo" value="Domingo" class="dias"> <label for="">Domingo</label>
                     </div>
                     <div class="txt_form clases">
                         <p><b> Clase: </b></p>
-                        <label for="" ><input type="radio" name="" id="">Cachorro A</label> 
-                        <label for="" ><input type="radio" name="" id="">Cachorro B</label>
-                        <label for=""><input type="radio" name="" id="">Joven</label>
-                        <label for=""><input type="radio" name="" id="">Camp. Joven</label>
-                        <label for=""><input type="radio" name="" id="">Intermedia</label>
-                        <label for=""><input type="radio" name="" id="">Libre</label>
-                        <label for=""><input type="radio" name="" id="">Cría Mexicana</label>
-                        <label for=""><input type="radio" name="" id="">Veterano</label>
-                        <label for=""><input type="radio" name="" id="">Campeón</label>
-                        <label for=""><input type="radio" name="" id="">Gran Campeón</label>
-                        <label for=""><input type="radio" name="" id="">Progenie</label>
-                        <label for=""><input type="radio" name="" id="">Pareja</label>
-                        <label for=""><input type="radio" name="" id="">Criadero</label>
-                        <label for=""><input type="radio" name="" id="">Exhibición</label>
+                        <div class="radioButtons" required>
+                            <label for="" ><input type="radio" name="A"  onclick="unchecked(this);" value="Cachorro A">Cachorro A</label> 
+                            <label for="" ><input type="radio" name="B"  onclick="unchecked(this);" value="Cachorro B">Cachorro B</label>
+                            <label for="" ><input type="radio" name="j"  onclick="unchecked(this);" value="Joven">Joven</label>
+                            <label for="" ><input type="radio" name="cJ"  onclick="unchecked(this);" value="Camp. Joven">Camp. Joven</label>
+                            <label for="" ><input type="radio" name="i"  onclick="unchecked(this);" value="Intermedia">Intermedia</label>
+                            <label for="" ><input type="radio" name="l"  onclick="unchecked(this);" value="Libre">Libre</label>
+                            <label for="" ><input type="radio" name="cM"  onclick="unchecked(this);" value="Cría Mexicana">Cría Mexicana</label>
+                            <label for="" ><input type="radio" name="v"  onclick="unchecked(this);" value="Veterano">Veterano</label>
+                            <label for="" ><input type="radio" name="c"  onclick="unchecked(this);" value="Campeón">Campeón</label>
+                            <label for="" ><input type="radio" name="gC"  onclick="unchecked(this);" value="Gran Campeón">Gran Campeón</label>
+                            <label for="" ><input type="radio" name="p"  onclick="unchecked(this);" value="Progenie">Progenie</label>
+                            <label for="" ><input type="radio" name="pJ"  onclick="unchecked(this);" value="Pareja">Pareja</label>
+                            <label for="" ><input type="radio" name="cD"  onclick="unchecked(this);" value="Criadero">Criadero</label>
+                            <label for="" ><input type="radio" name="e"  onclick="unchecked(this);" value="Exhibición">Exhibición</label>
+                        </div>
+                        
                     </div>
                     <div class="btn_form">
                         <input class="btnEnviar" type="submit" value="Enviar">
@@ -148,6 +151,7 @@
                 </div>
         </div>
     </form>
+    <script src="../js/radio.js"></script>
 </body>
 
 </html>

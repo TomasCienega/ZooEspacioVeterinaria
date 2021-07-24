@@ -58,10 +58,12 @@ h1, h2, h3, h4{
 .txt_form{
     line-height: 5rem;
 }
+
 .txt_form label{
     font-size: 3rem;
 }
-.txt_form input[type=text]{
+.txt_form input[type=text],
+    .txt_form input[type=email]{
     width: 100%;
     padding: 1rem;
     border-radius: 1rem;
@@ -69,6 +71,9 @@ h1, h2, h3, h4{
     outline: none;
 }
 .txt_form input[type=text]:focus{
+    border-color: var(--verde);
+}
+.txt_form input[type=email]:focus{
     border-color: var(--verde);
 }
 img{
@@ -95,8 +100,25 @@ img{
 input[type=radio]{
     width: 35px;
     height: 35px;
+    margin-top: 10px;
 }
+input[type=checkbox]{
+    width: 35px;
+    height: 35px;  
+    margin-top: 10px;
+}
+.checkmark{
+    width: 35px;
+    height: 35px;
 
+}
+.radioButtons{
+    display: flex;
+    flex-wrap: wrap;
+}
+.radioButtons label{
+    width: 300px;
+}
 @media (min-width: 360px) {
     img{
         margin-left: 33%;

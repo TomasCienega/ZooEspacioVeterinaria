@@ -1,0 +1,42 @@
+.nav a{
+    text-decoration: none;
+}
+body{
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+.logout{
+    font-size: 2.5rem;
+    margin: 15px;
+}
+
+/* Tabla */
+th,td {
+    padding: 0.4rem !important;
+}
+body>div {
+    font-size: 2rem;
+    box-shadow: 10px 10px 8px #888888;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.container{
+    margin: 2rem;
+    padding: 5px;
+
+}
+div.dataTables_filter {
+    display: flex;
+    justify-content: center;
+}
+div.dataTables_filter label input{
+    font-size: 2rem;
+}
+div.dataTables_length label select{
+    font-size: 2rem;
+}
+
+td button{
+    margin: 10px;
+    padding: 0.5rem;
+}

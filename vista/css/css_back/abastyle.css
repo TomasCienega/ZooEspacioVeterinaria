@@ -56,6 +56,7 @@ a{
     width: 15rem;
     margin-left: 4rem;
     font-size: 2rem;
+    margin-bottom: 2rem;
 }
 .nav a:hover{
     color: black;
@@ -136,15 +137,14 @@ img{
     /* INICIO DE BARRA DE NAVEGACIÓN */
     /*****************************************************/
     .nav{
-        height: 10rem;
+        height: auto;
         margin-bottom: 2rem;
     }
     .nav a{
-        width: 15rem;
+        width: 20rem;
+        margin-left: 4rem;
         font-size: 3rem;
-    }
-    .nav a:hover{
-        color: black;
+        margin-bottom: 2rem;
     }
     .img_banner{
         font-size: 4rem;
@@ -169,5 +169,15 @@ img{
     .logout{
 
         margin-left: 87%;
+    }
+    .nav{
+        height: auto;
+        margin-bottom: 2rem;
+    }
+    .nav a{
+        width: 12rem;
+        margin-left: 1rem;
+        font-size: 3rem;
+        margin-bottom: 2rem;
     }
 }

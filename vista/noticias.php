@@ -37,8 +37,9 @@
             <nav class="titulo navegacion__items">
                 <a class="navegacion__enlace1 animate__animated animate__lightSpeedInLeft" href="productos.html">Productos</a>
                 <a class="navegacion__enlace2 animate__animated animate__lightSpeedInRight" href="servicios.html">Servicios</a>
-                <a class="navegacion__enlace4 animate__animated animate__lightSpeedInLeft" href="noticias.php">Noticias</a>
-                <a class="navegacion__enlace3 animate__animated animate__lightSpeedInLeft" href="federacion.html">Federación</a>
+                <a class="navegacion__enlace4 animate__animated animate__lightSpeedInLeft" href="noticias.php">Perdidos</a>
+                <a class="navegacion__enlace4 animate__animated animate__lightSpeedInLeft" href="adopcion.php">Adoptame</a>
+                <a class="navegacion__enlace3 animate__animated animate__lightSpeedInLeft" href="federacion.php">Federación</a>
             </nav>
 
     </header> <!-- TERMINO DEL HEADER -->
@@ -99,20 +100,7 @@
             </ul>
         </div>
         <!-- ******************************************************************************* -->
-        <h1 class="titulo amarillo ">
-            Adoptame
-        </h1>
-        <div class="cuadro"><!--.cuadro-->
-            <div class="cuadro__flex">
-                <div class="cuadro__hijo">
-                    <img src="img/Logo.jpg" alt="Perdido">
-                    <ul class="mascPeL">
-                        <li>edad</li>
-                        <li>raza</li>
-                    </ul>
-                </div>
-            </div>
-        </div><!--.cuadro-->
+
 
    
 

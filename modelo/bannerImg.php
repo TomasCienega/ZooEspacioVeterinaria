@@ -14,6 +14,8 @@
         $sent="UPDATE `imgbanner` SET `imagen` = '$imgFull' WHERE id_banner=3";
     }else if(isset($_POST['Actualizar4'])){
         $sent="UPDATE `imgbanner` SET `imagen` = '$imgFull' WHERE id_banner=4";
+    }else if(isset($_POST['Actualizar5'])){
+        $sent="UPDATE `imgbanner` SET `imagen` = '$imgFull' WHERE id_banner=5";
     }
     $insertar = $cn->query($sent);
 

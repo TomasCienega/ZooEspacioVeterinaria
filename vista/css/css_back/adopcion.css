@@ -1,0 +1,201 @@
+:root{
+    /**FUENTES UTILIZADAS**/
+    --fuenteParrafo: 'Barlow Condensed', sans-serif;
+    --fuenteEspecial: 'Luckiest Guy', cursive;
+
+    /**COLORES UTILIZADOS**/
+    --naranja: #FFA424;
+    --azul: #1489FD;
+    --amarillo: #FFD200;
+    --verde: #32AE7E;
+    --rojo: #C20000;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/* GENERALES */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px*/
+}
+h1,h2,h3,h4,h5{
+    font-family: var(--fuenteEspecial);
+}
+*,*:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fuenteParrafo);
+    font-size: 2.5rem;
+    line-height: 1.5;  
+}
+/** GLOBALES **/
+a{
+    text-decoration: none;
+}
+.titulo{
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 3rem;
+}
+/* INICIO DE BARRA DE NAVEGACIÓN */
+/*****************************************************/
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--azul);
+    height: auto;
+    padding: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.nav a{
+    font-family: var(--fuenteEspecial);
+    color: white;
+    width: 15rem;
+    margin-left: 4rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.nav a:hover{
+    color: black;
+}
+/* FIN DE BARRA DE NAVEGACIÓN */
+/*****************************************************/
+/* INICIO DE BOTÓN LOGOUT */
+/*****************************************************/
+.logout{
+    font-family: var(--fuenteEspecial);
+    margin-bottom: 1rem;
+    height: 5rem;
+    padding: 1rem;
+    margin-left: 55%;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: none;
+    border: solid 1px #ccc;
+}
+.logout:hover{
+    background-color: var(--rojo);
+    color: white;
+}
+/* FIN DE BOTÓN LOGOUT */
+/*****************************************************/
+
+/* INICIO DE BODY */
+/*****************************************************/
+
+.rojo{
+    color: var(--rojo);
+}
+.perdido, .adopcion{
+    background-color: rgb(216, 216, 216);
+    height: auto;
+    max-width: 98%;
+    margin: 0 auto;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+.txt_form{
+    line-height: 5rem;
+}
+.txt_form label{
+    font-size: 3rem;
+    font-family: var(--fuenteEspecial);
+    text-align: justify;
+}
+.txt_form input[type=text]{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: solid 1px #ccc;
+    outline: none;
+}
+.txt_form textarea{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: solid 1px #ccc;
+    outline: none;
+}
+.txt_form input[type=text]:focus{
+    border-color: var(--azul);
+}
+.btnCrud{
+    max-width: 98%;
+    padding: 2rem;
+    margin: 0 auto;
+}
+.btn_Verde{
+    font-family: var(--fuenteEspecial);
+    font-size: 4rem;
+    width: 100%;
+    height: 7rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: var(--verde);
+    margin-bottom: 2rem;
+}
+
+input [type=submit]{
+    font-family: var(--fuenteEspecial);
+}
+/* FIN DE BODY */
+/*****************************************************/
+
+
+/*****************************************************/
+/* INICIO MEDIA QUERY */
+@media (min-width: 768px) {
+    /* INICIO DE BARRA DE NAVEGACIÓN */
+    /*****************************************************/
+    .nav{
+        height: auto;
+        margin-bottom: 2rem;
+    }
+    .nav a{
+        width: 20rem;
+        margin-left: 4rem;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    /* INICIO DE BOTÓN LOGOUT */
+    /*****************************************************/
+    .logout{
+        margin-left: 75%;
+    }
+
+    /* FIN DE BOTÓN LOGOUT */
+    /*****************************************************/ 
+    .perdido, .adopcion, .btnCrud{
+        max-width: 50%;
+    }
+    .form_hijo{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+}
+@media (min-width: 1280px) {
+    .logout{
+
+        margin-left: 87%;
+    }
+    .nav{
+        height: auto;
+        margin-bottom: 2rem;
+    }
+    .nav a{
+        width: 12rem;
+        margin-left: 1rem;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+}

@@ -13,10 +13,10 @@ function cerrar_sesion(){
         if(data=="OK"){
             (async () =>{
                 await Swal.fire({
-                    title: 'Hasta luego!',
+                    title: '<span style="font-size:4rem;">Hasta luego!</span>',
                     text: 'Sesión cerrada correctamente',
                     icon: 'success',
-                    timer: 5000
+                    timer: 5000,
                 });
                 window.location='../login.html';
             })()

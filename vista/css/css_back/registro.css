@@ -1,0 +1,163 @@
+:root{
+    /**FUENTES UTILIZADAS**/
+    --fuenteParrafo: 'Barlow Condensed', sans-serif;
+    --fuenteEspecial: 'Luckiest Guy', cursive;
+
+    /**COLORES UTILIZADOS**/
+    --naranja: #FFA424;
+    --azul: #1489FD;
+    --amarillo: #FFD200;
+    --verde: #32AE7E;
+    --rojo: #C20000;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/* GENERALES */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px*/
+}
+h1,h2,h3,h4,h5{
+    font-family: var(--fuenteEspecial);
+}
+*,*:before, *:after {
+    box-sizing: inherit;
+}
+li{
+    list-style: none;
+}
+body{
+    font-family: var(--fuenteParrafo);
+    font-size: 2.5rem;
+    line-height: 1.5;  
+}
+/** GLOBALES **/
+a{
+    text-decoration: none;
+}
+.titulo{
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 3rem;
+}
+/* INICIO DE BARRA DE NAVEGACIÓN */
+/*****************************************************/
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--azul);
+    height: auto;
+    padding: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.nav a{
+    font-family: var(--fuenteEspecial);
+    color: white;
+    width: 15rem;
+    margin-left: 4rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.nav a:hover{
+    color: black;
+}
+/* FIN DE BARRA DE NAVEGACIÓN */
+/*****************************************************/
+/* INICIO DE BOTÓN LOGOUT */
+/*****************************************************/
+.logout{
+    font-family: var(--fuenteEspecial);
+    margin-bottom: 1rem;
+    height: 5rem;
+    padding: 1rem;
+    margin-left: 55%;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: none;
+    border: solid 1px #ccc;
+}
+.borrar{
+    font-size: 2.5rem;
+    font-family: var(--fuenteEspecial);
+    margin-bottom: 1rem;
+    margin-left: 16%;
+    height: 5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: none;
+    border: solid 1px #ccc;
+}
+.logout:hover, .borrar:hover{
+    background-color: var(--rojo);
+    color: white;
+}
+/* FIN DE BOTÓN LOGOUT */
+/*****************************************************/
+
+/* INICIO DE BODY */
+/*****************************************************/
+
+.azul{
+    color: var(--azul);
+}
+
+/* FIN DE BODY */
+/*****************************************************/
+
+
+/*****************************************************/
+/* INICIO MEDIA QUERY */
+@media (min-width: 360px) {
+
+
+}
+
+@media (min-width: 768px) {
+    /* INICIO DE BARRA DE NAVEGACIÓN */
+    /*****************************************************/
+    .nav{
+        height: auto;
+        margin-bottom: 2rem;
+    }
+    .nav a{
+        width: 20rem;
+        margin-left: 4rem;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    /* INICIO DE BOTÓN LOGOUT */
+    /*****************************************************/
+    .logout{
+        margin-left: 75%;
+    }
+    /* FIN DE BOTÓN LOGOUT */
+    /*****************************************************/ 
+    /* INICIO DEL BODY */
+    /*****************************************************/
+
+    /* INICIO DEL BODY */
+    /*****************************************************/
+}
+@media (min-width: 1280px) {
+    .logout{
+
+        margin-left: 87%;
+    }
+    .nav{
+        height: auto;
+        margin-bottom: 2rem;
+    }
+    .nav a{
+        width: 12rem;
+        margin-left: 1rem;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+}

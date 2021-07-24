@@ -60,6 +60,7 @@ a{
     width: 15rem;
     margin-left: 4rem;
     font-size: 2rem;
+    margin-bottom: 2rem;
 }
 .nav a:hover{
     color: black;
@@ -143,25 +144,6 @@ a{
     background-color: var(--verde);
     margin-bottom: 2rem;
 }
-.btn_Amarillo{
-    font-family: var(--fuenteEspecial);
-    font-size: 4rem;
-    width: 100%;
-    height: 7rem;
-    border-radius: 1rem;
-    cursor: pointer;
-    background-color: var(--amarillo);
-    margin-bottom: 2rem;
-}
-/* .btn_Azul{
-    font-family: var(--fuenteEspecial);
-    font-size: 4rem;
-    padding: 1rem;
-    border-radius: 1rem;
-    background-color: var(--azul);
-    margin-bottom: 2rem;
-    color: black;
-} */
 input [type=submit]{
     font-family: var(--fuenteEspecial);
 }
@@ -175,15 +157,14 @@ input [type=submit]{
     /* INICIO DE BARRA DE NAVEGACIÓN */
     /*****************************************************/
     .nav{
-        height: 10rem;
+        height: auto;
         margin-bottom: 2rem;
     }
     .nav a{
-        width: 15rem;
+        width: 20rem;
+        margin-left: 4rem;
         font-size: 3rem;
-    }
-    .nav a:hover{
-        color: black;
+        margin-bottom: 2rem;
     }
     /* INICIO DE BOTÓN LOGOUT */
     /*****************************************************/
@@ -208,5 +189,15 @@ input [type=submit]{
     .logout{
 
         margin-left: 87%;
+    }
+    .nav{
+        height: auto;
+        margin-bottom: 2rem;
+    }
+    .nav a{
+        width: 12rem;
+        margin-left: 1rem;
+        font-size: 3rem;
+        margin-bottom: 2rem;
     }
 }

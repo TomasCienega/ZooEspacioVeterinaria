@@ -20,7 +20,9 @@ html {
 *,*:before, *:after {
     box-sizing: inherit;
 }
-
+li{
+    list-style: none;
+}
 body{
     font-family: var(--fuenteParrafo);
     font-size: 2.5rem;
@@ -173,20 +175,27 @@ h1, h2, h3, h4{
     max-width: 98%;
     margin: 0 auto;
     padding: 1rem;
+    margin-bottom: 3rem;
 }
 .cuadro_flex{
     display: flex;
 }
 .cuadro__hijo{
-    width: auto;
-    height: 40rem;
-    background-color: white;
-    margin-bottom: 1rem;
     border-radius: 2rem;
-    margin-bottom: 3rem;
+
 }
 .cuadro__hijo:hover{
     box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3), 0 8px 30px 0 rgba(0, 0, 0, 0.20);
+}
+.cuadro__hijo img{
+    max-width: 98%;
+    width: auto;
+    height: auto;
+    padding-top: 2rem;
+}
+.mascPeL{
+    font-family: var(--fuenteEspecial);
+    padding: 5rem;
 }
 .bg{
     position: fixed;
@@ -261,6 +270,20 @@ h1, h2, h3, h4{
 } 
 /* ------------------------------------------------------------------------ */
 /* MEDIA QUERY */
+@media (min-width: 360px) {
+
+    .cuadro__hijo{
+        width: auto;
+        height: auto;
+    }
+    .cuadro__hijo img{
+        width: 70rem;
+        height: 40rem;
+        padding-top: 2rem;
+        padding-left: 1rem;
+    }
+
+}
 @media (min-width: 768px) {
     .navegacion__items{
         flex-direction: row;
@@ -317,7 +340,13 @@ h1, h2, h3, h4{
     }
     .cuadro__hijo{
         width: 48%;
-        height: 50rem;
+        height: auto;
+    }
+    .cuadro__hijo img{
+        width: 90rem;
+        height: 40rem;
+        padding-top: 2rem;
+        margin-right: .5rem;
     }
     .bg img{
         height: 30rem;

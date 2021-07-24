@@ -31,10 +31,13 @@
     <header>
         <nav class="nav">
             <a href="actualizarBanner.php">Banner</a>
-            <a href="noticias.php">Noticias</a>
-            <a href="verPerdido.php">Mascota</a>
-            <a href="#">Federación</a>
-            <a href="#">Registro</a>
+            <a href="noticias.php">Formulario Perdido</a>
+            <a href="verPerdido.php">Tarjeta Perdido</a>
+            <a href="adopcion.php">Formulario Adopción</a>
+            <a href="verAdopcion.php">Tarjeta Adopción</a>
+            <a href="formFederacion.php">Formulario Federación</a>
+            <a href="verFederacion.php">Tarjeta Federación</a>
+            <a href="registro.php">Registro</a>
         </nav>
         <input class="logout" type="submit" value="Cerrar Sesión" name="CerrarSesion" id="CerrarSesion" onclick="cerrar_sesion();">
 </header>
@@ -64,10 +67,18 @@
     </div>
     <div class="banner">
         <form action="../../modelo/bannerImg.php" method="post" enctype="multipart/form-data">
-            <h1 class="txt_banner">NOTICIAS</h1>
+            <h1 class="txt_banner">Animales Perdidos</h1>
             <img class="imgBack__perro" src="../../modelo/verBanner1.php?id=4" alt="NOTICIAS">
             <input class="img_banner" type="file" name="img" id="img" required>
             <input class="btn_banner" type="submit" value="Actualizar" name="Actualizar4">
+        </form>
+    </div>
+    <div class="banner">
+        <form action="../../modelo/bannerImg.php" method="post" enctype="multipart/form-data">
+            <h1 class="txt_banner">Adopciones</h1>
+            <img class="imgBack__perro" src="../../modelo/verBanner1.php?id=5" alt="NOTICIAS">
+            <input class="img_banner" type="file" name="img" id="img" required>
+            <input class="btn_banner" type="submit" value="Actualizar" name="Actualizar5">
         </form>
     </div>
 </body>

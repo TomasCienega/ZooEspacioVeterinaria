@@ -1,3 +1,6 @@
+<?php
+    include('../Controlador/vistaNoticiaController.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,8 +36,9 @@
             <nav class="titulo navegacion__items">
                 <a class="navegacion__enlace animate__animated animate__lightSpeedInLeft" href="productos.html">Productos</a>
                 <a class="navegacion__enlace animate__animated animate__lightSpeedInRight" href="servicios.html">Servicios</a>
-                <a class="navegacion__enlace animate__animated animate__lightSpeedInLeft" href="noticias.php">Noticias</a>
-                <a class="navegacion__enlace animate__animated animate__lightSpeedInLeft" href="federacion.html">Federación</a>
+                <a class="navegacion__enlace animate__animated animate__lightSpeedInLeft" href="noticias.php">Perdidos</a>
+                <a class="navegacion__enlace animate__animated animate__lightSpeedInLeft" href="adopcion.php">Adoptame</a>
+                <a class="navegacion__enlace animate__animated animate__lightSpeedInLeft" href="federacion.php">Federación</a>
             </nav>
 
     </header> <!-- TERMINO DEL HEADER -->
@@ -79,14 +83,23 @@
             </div>
         </div>
 
-        <div class="cuadro">
-            <div class="cuadro__flex">
-                <div class="cuadro__hijo">
-
-                </div>
-
-            </div>
-        </div>
+        <div class="cuadro"><!--.cuadro-->
+        <div class="cuadro__flex">
+            <?php 
+                 while ($filaNoticia=$listarN->fetch_assoc()){
+                     echo'        
+                
+                         <div class="cuadro__hijo">
+                             <img src="data:image/jpg;base64, '.base64_encode($filaNoticia['img_noticia']).' "alt="Perdido">
+                             <ul class="mascPeL">
+                                 <li>Descripcion: '.$filaNoticia['descripcion'].'</li>
+                                 <li>'.$filaNoticia['texto'].'</li>
+                             </ul>
+                         </div>';
+                 }
+            ?>
+         </div>
+    </div><!--.cuadro-->
 
         <div class="bar"> <!--INICIO BARRA DE REDES-->
             <a href="https://www.facebook.com/zooespacio.clinicaveterinaria" class="icon icon-facebook " target="blank">
